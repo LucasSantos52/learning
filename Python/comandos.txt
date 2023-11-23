@@ -1,0 +1,16 @@
+## nao tem funcionado direito com o powershell
+
+as envs ficam em : c:\User\lucas\Envs
+
+mkvirtualenv nome - criar uma env
+rmvirtualenv nome - exclui a env
+
+listar as envs
+workon
+
+para mudar a env utilizando o terminal
+workon nome
+
+para sair do terminal
+control+z -> enter
+
