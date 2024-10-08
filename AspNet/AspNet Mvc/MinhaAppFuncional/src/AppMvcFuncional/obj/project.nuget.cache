@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CwFmZc/Nowg=",
+  "dgSpecHash": "sAJXbRitOh4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas.andre\\OneDrive - Adventistas\\_projects\\learning\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj",
+  "projectFilePath": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas.andre\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lucas.andre\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

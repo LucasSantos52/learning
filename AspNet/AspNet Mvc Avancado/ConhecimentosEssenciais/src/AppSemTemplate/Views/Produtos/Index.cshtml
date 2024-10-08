@@ -1,0 +1,56 @@
+﻿@model IEnumerable<AppSemTemplate.Models.Produto>
+
+@{
+    ViewData["Title"] = "Meus produtos";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="CriarNovoProduto"><spam class="fade fa-plus"></spam> Novo</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+
+            <th>Açoes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="/images/@item.Imagem" style="height: 6.25rem; width: 3.8125rem " />
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                
+                <td>
+                    R$ @Html.DisplayFor(modelItem => item.Valor)
+                </td>
+                
+                <td>
+                    <botao tipo-botao="Detalhes" route-id="@item.Id"></botao>
+                    <botao tipo-botao="Editar" route-id="@item.Id"></botao>
+                    <botao tipo-botao="Excluir" route-id="@item.Id"></botao>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<vc:counter model-counter="@Model.Count()"></vc:counter>
+@* @await Component.InvokeAsync("Counter", Model.Count()) *@

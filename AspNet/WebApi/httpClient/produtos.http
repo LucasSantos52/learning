@@ -1,0 +1,37 @@
+### install the vscode extension { REST CLIENT }
+
+### Variables 
+@apiurl = https://localhost:7109/api/produtos
+@produtoId = 4
+
+### GET produtos
+GET {{apiurl}}/
+
+### GET produto
+GET {{apiurl}}/{{produtoId}}
+
+### POST produto
+POST {{apiurl}}/
+Content-Type: application/json
+
+{   
+   "nome":"Produto novo",
+   "preco": 100,
+   "quantidadeEstoque":"50",
+   "descricao":"teste"
+}
+
+### PUT produto
+PUT {{apiurl}}/{{produtoId}}
+Content-Type: application/json
+
+{   
+   "id": {{produtoId}},
+   "nome":"Produto atualizado",
+   "preco": 100,
+   "quantidadeEstoque":"50",
+   "descricao":"teste"
+}
+
+### DELETE produto
+DELETE {{apiurl}}/{{produtoId}}

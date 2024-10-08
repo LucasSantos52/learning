@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas.andre\\OneDrive - Adventistas\\_projects\\learning\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj": {}
+    "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas.andre\\OneDrive - Adventistas\\_projects\\learning\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj": {
+    "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas.andre\\OneDrive - Adventistas\\_projects\\learning\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj",
+        "projectUniqueName": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj",
         "projectName": "AppMvcFuncional",
-        "projectPath": "C:\\Users\\lucas.andre\\OneDrive - Adventistas\\_projects\\learning\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj",
+        "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\AppMvcFuncional.csproj",
         "packagesPath": "C:\\Users\\lucas.andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas.andre\\OneDrive - Adventistas\\_projects\\learning\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\obj\\",
+        "outputPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc\\MinhaAppFuncional\\src\\AppMvcFuncional\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas.andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
