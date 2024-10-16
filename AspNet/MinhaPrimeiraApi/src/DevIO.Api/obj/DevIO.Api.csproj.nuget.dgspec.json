@@ -1,0 +1,279 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Api\\DevIO.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Api\\DevIO.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "projectName": "DevIO.Api",
+        "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "packagesPath": "C:\\Users\\lucas.andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas.andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj"
+              },
+              "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Data\\DevIO.Data.csproj": {
+                "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Data\\DevIO.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Api.Analyzers": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.sqlserver": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectName": "DevIO.Business",
+        "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "packagesPath": "C:\\Users\\lucas.andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas.andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Data\\DevIO.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectName": "DevIO.Data",
+        "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "packagesPath": "C:\\Users\\lucas.andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas.andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

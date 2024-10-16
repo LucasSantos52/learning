@@ -1,0 +1,41 @@
+# como funciona: 
+#
+# Request                                       POST https://example.com/comments
+# headers                                       content-type: application/json
+# linha em branco
+# body da requisição dentro de { }              {
+#                                                   "name": "sample",
+#                                                   "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+#                                               }
+#
+# ### -> precisa ser colocado pra terminar uma request
+
+# variáveis
+@baseUrl = https://localhost:5000/api/
+@controller = fornecedores/
+
+
+###
+GET {{baseUrl}}{{controller}}
+
+### 
+POST {{baseUrl}}{{controller}}
+content-type: application/json
+
+{
+  "nome": "Teste2",
+  "documento": "1234567890",
+  "tipoFornecedor": 0,
+  "ativo": true
+}
+
+###
+PUT {{baseUrl}}{{controller}}
+content-type: application/json
+
+{
+  "nome": "Teste2",
+  "documento": "1234567890",
+  "tipoFornecedor": 0,
+  "ativo": true
+}

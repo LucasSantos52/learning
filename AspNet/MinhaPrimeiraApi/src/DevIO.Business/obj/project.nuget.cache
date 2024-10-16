@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GjyOmuNKbws=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaPrimeiraApi\\src\\DevIO.Business\\DevIO.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas.andre\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\lucas.andre\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.35\\microsoft.netcore.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\lucas.andre\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.35\\microsoft.windowsdesktop.app.ref.6.0.35.nupkg.sha512",
+    "C:\\Users\\lucas.andre\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.35\\microsoft.aspnetcore.app.ref.6.0.35.nupkg.sha512"
+  ],
+  "logs": []
+}
