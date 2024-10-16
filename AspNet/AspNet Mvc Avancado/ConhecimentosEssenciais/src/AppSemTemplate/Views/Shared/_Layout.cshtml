@@ -8,11 +8,11 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />        
+        <link rel="stylesheet" href="~/css/site.css" />
     </environment>
-    
-    <environment exclude="Development">        
-        <link rel="stylesheet" href="~/css/site.min.css" />        
+
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/site.min.css" />
     </environment>
 
 </head>
@@ -33,12 +33,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Vendas" asp-controller="Gestao" asp-action="Index">Gestão de vendas</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Produtos" asp-controller="Cadastro" asp-action="Index">Gestão de Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="DiLifecycle" asp-action="Index">Teste DI</a>
+                        </li>
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
-
+        
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -61,7 +68,7 @@
     <environment exclude="Development">
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.min.js"></script>        
+        <script src="~/js/site.min.js"></script>
     </environment>
 
     @await RenderSectionAsync("Scripts", required: false)

@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using AppSemTemplate.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace AppSemTemplate.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<IdentityUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -12,3 +14,4 @@ namespace AppSemTemplate.Data
         public DbSet<Produto> Produtos { get; set; }
     }
 }
+

@@ -6,12 +6,12 @@ class Program
     {
         int numero;
         bool numeroValido;
-        
+
         do
         {
             Console.WriteLine("Quantidade:");
             string entrada = Console.ReadLine();
-            
+
             numeroValido = int.TryParse(entrada, out numero);
 
             if (!numeroValido)
@@ -21,9 +21,16 @@ class Program
 
         } while (!numeroValido);
 
-        for(int i = 0; i < numero; i++){
+        Console.WriteLine("");
+
+        for (int i = 0; i < numero; i++)
+        {
             Guid g = Guid.NewGuid();
             Console.WriteLine(g);
         }
+
+        Console.WriteLine("");
+        Console.WriteLine("Pressione qualquer tecla para sair...");
+        Console.ReadKey();
     }
 }

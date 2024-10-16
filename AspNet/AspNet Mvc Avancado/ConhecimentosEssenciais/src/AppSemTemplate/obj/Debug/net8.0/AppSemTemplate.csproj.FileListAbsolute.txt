@@ -11,6 +11,10 @@ C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Humanizer.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Build.dll
@@ -34,6 +38,10 @@ C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -233,6 +241,7 @@ C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.AssemblyInfoInputs.cache
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.AssemblyInfo.cs
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.csproj.CoreCompileInputs.cache
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.RazorAssemblyInfo.cache
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.RazorAssemblyInfo.cs

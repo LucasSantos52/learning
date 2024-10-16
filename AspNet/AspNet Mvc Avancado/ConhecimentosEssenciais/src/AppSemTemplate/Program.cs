@@ -1,40 +1,16 @@
-using AppSemTemplate.Data;
-using AppSemTemplate.Extensions;
-using Microsoft.EntityFrameworkCore;
+using AppSemTemplate.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+builder
+    .AddMvcConfiguration()
+    .AddIdentityConfiguration()
+    .AddDependencyInjectionConfiguration();
 
-// SLUGIFY - exemplo
-//builder.Services.AddRouting(options =>
-//    options.ConstraintMap["slugify"] = typeof(RouteSlugifyParameterTransformer));
-
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-builder.Services.AddDbContext<AppDbContext>(o =>
-    o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-app.UseStaticFiles();
-
-app.UseRouting();
-
-// SLUGIFY - exemplo
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller:slugify=Home}/{action:slugify=Index}/{id?}"
-//    );
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
-    );
+app.UseMvcConfiguration();
 
 app.Run();
