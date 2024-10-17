@@ -1,8 +1,10 @@
 ﻿using AppSemTemplate.Data;
+using AppSemTemplate.Extensions;
 using AppSemTemplate.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace AppSemTemplate.Configuration
 {
@@ -14,12 +16,14 @@ namespace AppSemTemplate.Configuration
                 .SetBasePath(builder.Environment.ContentRootPath)
                 .AddJsonFile("appsettings.json", true, true)
                 .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", true, true)
-                .AddEnvironmentVariables();
+                .AddEnvironmentVariables()
+                .AddUserSecrets(Assembly.GetExecutingAssembly(), true); // -> aponta para o user secret, botão direito no projeto -> Manage user secrets
 
             builder.Services.AddControllersWithViews(options =>
             {
                 // aplica globalmente a tag de segurança [ValidateAntiForgeryToken] em todas as rotas
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+                options.Filters.Add(typeof(FiltroAuditoria));
             });
 
             
@@ -63,12 +67,22 @@ namespace AppSemTemplate.Configuration
 
             if (app.Environment.IsDevelopment())
             {
-
+                // adiciona pagina detalhada de erros
+                app.UseDeveloperExceptionPage();
             }
             else
             {
+                // Redireciona o usuário para a página /erro/500 quando ocorre uma exceção não tratada.
+                app.UseExceptionHandler("/erro/500");
+
+                // Redireciona o usuário para uma página de erro personalizada (ex.: /erro/404)
+                // com base no código de status da resposta (o {0} será substituído pelo código de status).
+                app.UseStatusCodePagesWithRedirects("/erro/{0}");
+
                 app.UseHsts();
             }
+
+            app.UseGlobalizationConfig();
 
             app.UseHttpsRedirection();
 
