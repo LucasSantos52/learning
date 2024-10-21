@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\css\\site.min.css"
     },
     {
+      "Id": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\2efdfc50-2487-488b-9212-6f1d40d18c5e_Perfil_cut.jpg",
+      "PackagePath": "staticwebassets\\images\\2efdfc50-2487-488b-9212-6f1d40d18c5e_Perfil_cut.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\987326bc-a934-4b7b-b2ab-c8f0e1a60045_Perfil_cut.jpg",
+      "PackagePath": "staticwebassets\\images\\987326bc-a934-4b7b-b2ab-c8f0e1a60045_Perfil_cut.jpg"
+    },
+    {
       "Id": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\wwwroot\\images\\CSS.jpg",
       "PackagePath": "staticwebassets\\images\\CSS.jpg"
     },

@@ -19,6 +19,10 @@ namespace AppSemTemplate.Configuration
                 .AddEnvironmentVariables()
                 .AddUserSecrets(Assembly.GetExecutingAssembly(), true); // -> aponta para o user secret, botão direito no projeto -> Manage user secrets
 
+            // cache do tipo request cache, não pode ser usando em locais de usuários logados pq compartilha os dados com todos que acessarem o recuros
+            // o cache mais indicado pra se usar é usando Redis
+            builder.Services.AddResponseCaching();
+
             builder.Services.AddControllersWithViews(options =>
             {
                 // aplica globalmente a tag de segurança [ValidateAntiForgeryToken] em todas as rotas
@@ -85,6 +89,8 @@ namespace AppSemTemplate.Configuration
 
                 app.UseHsts();
             }
+
+            app.UseResponseCaching();
 
             app.UseGlobalizationConfig();
 

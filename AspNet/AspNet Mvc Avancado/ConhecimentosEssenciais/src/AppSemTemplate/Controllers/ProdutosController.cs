@@ -46,7 +46,7 @@ namespace AppSemTemplate.Controllers
             return View(produto);
         }
 
-        // AD,VI,ED,EX
+        // AD,VI,ED,EX -> adicionar, visualizar, editar e excluir
         [Route("criar-novo")]
         [ClaimsAuthorize("Produtos", "AD")]
         public IActionResult CriarNovoProduto()
