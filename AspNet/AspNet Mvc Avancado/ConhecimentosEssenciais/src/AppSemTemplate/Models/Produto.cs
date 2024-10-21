@@ -22,3 +22,4 @@ namespace AppSemTemplate.Models
         public decimal  Valor { get; set; }
     }
 }
+ 

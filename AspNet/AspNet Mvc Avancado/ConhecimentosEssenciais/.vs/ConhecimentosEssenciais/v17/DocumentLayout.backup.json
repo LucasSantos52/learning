@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 110,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
               "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
               "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
               "RelativeToolTip": "src\\AppSemTemplate\\Views\\Produtos\\Index.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAuwDgAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T14:31:14.298Z",
+              "WhenOpened": "2024-10-21T17:48:10.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Produtos\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T17:09:50.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAmwD0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T14:48:04.395Z",
               "EditorCaption": ""
             }
           ]

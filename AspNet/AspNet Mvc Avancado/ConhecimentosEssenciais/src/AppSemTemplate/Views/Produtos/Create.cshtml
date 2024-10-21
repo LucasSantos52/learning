@@ -10,25 +10,32 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        @* enctype="multipart/form-data" é necessário para serializar os dados que serão enviados - necessário para o envio de arquivos/imagens *@
+        <form enctype="multipart/form-data" asp-action="CriarNovoProduto">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="Imagem" class="control-label"></label>
-                <input asp-for="Imagem" class="form-control" />
-                <span asp-validation-for="Imagem" class="text-danger"></span>
+                <label asp-for="ImagemUpload" class="control-label"></label>
+                <div class="input-group custom-file-button">
+                    <input type="file" class="form-control" id="ImagemUpload" asp-for="ImagemUpload" />
+                    <label class="input-group-text" for="ImagemUpload">Escolher</label>
+                </div>
+
+                <span asp-validation-for="ImagemUpload" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Valor" class="control-label"></label>
                 <input asp-for="Valor" class="form-control" />
                 <span asp-validation-for="Valor" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="CriarNovoProduto" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -42,4 +49,9 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+    <script>
+        $("#ImagemUpload").attr("data-val", "true");
+        $("#ImagemUpload").attr("data-val-required", "Preencha o campo Imagem");
+    </script>
 }
