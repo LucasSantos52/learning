@@ -1,0 +1,23 @@
+﻿@using System.Text.Json
+@using AppSemTemplate.Models
+@{
+    var MeuCookieValue = Context.Request.Cookies["MeuCookie"];
+    var myObject = new Cookie { };
+
+    // Verifica se o valor do cookie não é nulo ou vazio
+    if (!string.IsNullOrEmpty(MeuCookieValue))
+    {
+        // Desserializando o JSON para um objeto
+        myObject = JsonSerializer.Deserialize<Cookie>(MeuCookieValue);
+    }
+}
+
+@if (myObject != null)
+{
+    <p>Nome: @myObject.Name</p>
+    <p>Idade: @myObject.Name2</p>
+}
+else
+{
+    <p>Cookie não encontrado ou não possui dados válidos.</p>
+}

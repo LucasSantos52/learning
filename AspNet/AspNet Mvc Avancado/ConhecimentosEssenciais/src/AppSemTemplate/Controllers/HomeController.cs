@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
+using System.Text.Json;
 
 namespace AppSemTemplate.Controllers
 {
@@ -44,7 +45,13 @@ namespace AppSemTemplate.Controllers
 
             ViewData["Message"] = _localizer["Seja bem vindo!"];
 
-            ViewData["Horario"] = DateTime.Now;
+            // verificando cache
+            //ViewData["Horario"] = DateTime.Now;
+
+            if(Request.Cookies.TryGetValue("MeuCookie", out string? cookieValue))
+            {
+                ViewData["MeuCookie"] = cookieValue;
+            }
 
             return View();
         }
@@ -64,12 +71,33 @@ namespace AppSemTemplate.Controllers
             Response.Cookies.Append(
                 CookieRequestCultureProvider.DefaultCookieName,
                 CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1)}
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
             );
 
             return LocalRedirect(returnUrl);
         }
 
+        [Route("cookies")]
+        public IActionResult Cookie()
+        {
+            var cookieOptions = new CookieOptions
+            {
+                Expires = DateTime.Now.AddHours(1)
+            };
+
+            var obj = new
+            {
+                Name = "teste1",
+                Name2 = "teste2"
+            };
+
+            var json = JsonSerializer.Serialize(obj);
+
+
+            Response.Cookies.Append("MeuCookie", json, cookieOptions);
+
+            return View();
+        }
 
         // obrigatorio ter 3 caracteres para tratar o codg. de erro, 400, 403, 500 ...
         [Route("erro/{id:length(3,3)}")]

@@ -34,7 +34,13 @@ namespace AppSemTemplate.Configuration
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
                 .AddDataAnnotationsLocalization();
 
-            
+            builder.Services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+                options.ConsentCookieValue = "true";
+            });
+
             // Adicionando suporte a mudança de convenção de rota das areas.
             builder.Services.Configure<RazorViewEngineOptions>(options =>
             {
@@ -44,7 +50,7 @@ namespace AppSemTemplate.Configuration
                 options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");
             });
 
-            
+
             // Contexto
             builder.Services.AddDbContext<AppDbContext>(o =>
                 o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -97,6 +103,8 @@ namespace AppSemTemplate.Configuration
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
+
+            app.UseCookiePolicy();
 
             app.UseRouting();
 

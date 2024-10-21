@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\configuration\\mvcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\configuration\\mvcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\views\\home\\cookie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\views\\home\\cookie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\models\\cookie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\models\\cookie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\aspnet mvc avancado\\conhecimentosessenciais\\src\\appsemtemplate\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F158FCE5-3D72-429A-A623-45AA40B1495F}|src\\AppSemTemplate\\AppSemTemplate.csproj|solutionrelative:src\\appsemtemplate\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T19:50:00.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MvcConfig.cs",
               "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
               "RelativeDocumentMoniker": "src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
               "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
               "RelativeToolTip": "src\\AppSemTemplate\\Configuration\\MvcConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwGoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T18:53:47.911Z",
+              "WhenOpened": "2024-10-21T19:45:02.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cookie.cs",
+              "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Models\\Cookie.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Models\\Cookie.cs",
+              "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Models\\Cookie.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Models\\Cookie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T19:40:26.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cookie.cshtml",
+              "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "RelativeToolTip": "src\\AppSemTemplate\\Views\\Home\\Cookie.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T19:29:07.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "src\\AppSemTemplate\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\AspNet Mvc Avancado\\ConhecimentosEssenciais\\src\\AppSemTemplate\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "src\\AppSemTemplate\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowGUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T19:17:52.936Z",
               "EditorCaption": ""
             }
           ]
