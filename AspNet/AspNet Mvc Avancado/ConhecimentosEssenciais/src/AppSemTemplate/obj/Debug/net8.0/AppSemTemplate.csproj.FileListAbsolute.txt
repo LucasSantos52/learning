@@ -260,3 +260,12 @@ C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.pdb
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.genruntimeconfig.cache
 C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\ref\AppSemTemplate.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\bin\Debug\net8.0\en\AppSemTemplate.resources.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.Resources.Controllers.HomeController.resources
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.Resources.Controllers.HomeController.en.resources
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.csproj.GenerateResource.cache
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\en\AppSemTemplate.resources.dll
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.Resources.Models.Produto.resources
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.Resources.Models.Produto.en.resources
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.Resources.Views.Shared._SelectLanguagePartial.resources
+C:\Users\lucas.andre\learning\AspNet\AspNet Mvc Avancado\ConhecimentosEssenciais\src\AppSemTemplate\obj\Debug\net8.0\AppSemTemplate.Resources.Views.Shared._SelectLanguagePartial.en.resources

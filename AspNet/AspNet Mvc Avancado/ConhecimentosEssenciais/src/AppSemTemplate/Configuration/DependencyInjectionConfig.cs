@@ -1,4 +1,6 @@
-﻿using AppSemTemplate.Services;
+﻿using AppSemTemplate.Extensions;
+using AppSemTemplate.Services;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 
 namespace AppSemTemplate.Configuration
 {
@@ -28,6 +30,8 @@ namespace AppSemTemplate.Configuration
             builder.Services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty)); // mesma de cima, com a diferença de receber parametro
 
             builder.Services.AddTransient<OperacaoService>(); // usado para o teste, pq não pode armazenar nenhum tipo de estado
+
+            builder.Services.AddSingleton<IValidationAttributeAdapterProvider, MoedaValidationAttributeAdapterProvider>();
 
             return builder;
         }

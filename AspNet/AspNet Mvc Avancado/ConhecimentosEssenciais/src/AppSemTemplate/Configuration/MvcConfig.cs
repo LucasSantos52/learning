@@ -24,7 +24,11 @@ namespace AppSemTemplate.Configuration
                 // aplica globalmente a tag de segurança [ValidateAntiForgeryToken] em todas as rotas
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
                 options.Filters.Add(typeof(FiltroAuditoria));
-            });
+
+                MvcOptionsConfig.ConfigurarMensagensDeModelBinding(options.ModelBindingMessageProvider);
+            })
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
 
             
             // Adicionando suporte a mudança de convenção de rota das areas.
