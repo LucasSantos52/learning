@@ -1,0 +1,162 @@
+using AppSemTemplate.Controllers;
+using AppSemTemplate.Data;
+using AppSemTemplate.Models;
+using AppSemTemplate.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore;
+using Moq;
+using System.Security.Claims;
+
+namespace Testes
+{
+    public class ControllerTestes
+    {
+        [Fact]
+        // nomeclatura baseada em arrange, act e assert
+        public void TesteController_Index_Sucesso()
+        {
+            // Arrange
+            //  -> preparar objetos, criar as instancias, popular as entidades, fazer os mocks
+            var controller = new TesteController();
+
+            // Act
+            //  -> ação, executar oq se quer testar
+            var result = controller.Index();
+
+            // Assert
+            //  -> Asserção, validar se o resultado foi conforme esperado
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void ProdutosController_Index_Sucesso()
+        {
+            // Arrange
+            //  -> DbContext Options rodando em memoria utilizando o InMemory
+            // pq em memoria?
+            //  -> Testes de unidade não consomem nada de infra/database,
+            //     não faz validação se a tabela existe, se tem valores...
+            var options = new DbContextOptionsBuilder<AppDbContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+
+            // contexto
+            var ctx = new AppDbContext(options);
+
+            //  -> populando o banco em memoria
+            ctx.Produtos.Add(new Produto { Id = 1, Nome = "Produto 1", Valor = 10m });
+            ctx.Produtos.Add(new Produto { Id = 2, Nome = "Produto 2", Valor = 11m });
+            ctx.Produtos.Add(new Produto { Id = 3, Nome = "Produto 3", Valor = 12m });
+            ctx.SaveChanges();
+
+            // Identity
+            var mockClaimsIdentity = new Mock<ClaimsIdentity>();
+            // dizendo como o mock tem se comportar quando for chamado
+            mockClaimsIdentity.Setup(m => m.Name).Returns("teste@teste.com");
+            // principal é a forma como o usuário é representado no aspnet, fica dentro do httpcontext
+            var principal = new ClaimsPrincipal(mockClaimsIdentity.Object);
+
+            // httpcontext
+            var mockContext = new Mock<HttpContext>();
+            mockContext.Setup(c => c.User).Returns(principal);
+
+            var imgService = new Mock<IImageUploadService>();
+
+            //controller
+            var controller = new ProdutosController(ctx, imgService.Object)
+            {
+                ControllerContext = new ControllerContext
+                {
+                    HttpContext = mockContext.Object
+                }
+            };
+
+            // Act
+            var result = controller.Index().Result;
+
+            // Assert
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public void ProdutosController_CriarNovoProduto_Sucesso()
+        {
+            // Arrange
+            //  -> DbContext Options rodando em memoria utilizando o InMemory
+            // pq em memoria?
+            //  -> Testes de unidade não consomem nada de infra/database,
+            //     não faz validação se a tabela existe, se tem valores...
+            var options = new DbContextOptionsBuilder<AppDbContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+
+            // Contexto
+            var ctx = new AppDbContext(options);
+
+            // Iformfile
+            var fileMock = new Mock<IFormFile>();
+            var fileName = "test.jpg";
+            fileMock.Setup(_ => _.FileName).Returns(fileName);
+
+            // Img Service
+            var imgService = new Mock<IImageUploadService>();
+            imgService.Setup(s => s.UploadArquivo(
+                new ModelStateDictionary(),
+                fileMock.Object,
+                It.IsAny<string>()
+                )).ReturnsAsync(true);
+
+
+            // Controller
+            var controller = new ProdutosController(ctx, imgService.Object);
+
+            // Produto
+            var produto = new Produto
+            {
+                Id = 1,
+                ImagemUpload = fileMock.Object,
+                Nome = "Teste",
+                Valor = 50m
+            };
+
+            // Act
+            var result = controller.CriarNovoProduto(produto).Result;
+
+            // Assert
+            Assert.IsType<RedirectToActionResult>(result);
+        }
+
+        [Fact]
+        public void ProdutosController_CriarNovoProduto_ErroValidacaoProduto()
+        {
+            // Arrange            
+            var options = new DbContextOptionsBuilder<AppDbContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+
+            // Contexto
+            var ctx = new AppDbContext(options);
+
+            // Img Service
+            var imgService = new Mock<IImageUploadService>();
+
+            // Controller
+            var controller = new ProdutosController(ctx, imgService.Object);
+            controller.ModelState.AddModelError("Nome", "O campo é requerido");
+
+            // Produto
+            var produto = new Produto
+            {
+            };
+
+            // Act
+            var result = controller.CriarNovoProduto(produto).Result;
+
+            // Assert
+            Assert.False(controller.ModelState.IsValid);
+            Assert.IsType<ViewResult>(result);
+        }
+    }
+}

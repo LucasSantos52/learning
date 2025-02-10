@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "NSE.Identidade.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/identidade/auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginUser",
+        "Type": "NSE.Identidade.API.Models.LoginUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NSE.Identidade.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/identidade/new-account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerUser",
+        "Type": "NSE.Identidade.API.Models.RegisterUser",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

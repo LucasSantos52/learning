@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "908tg3lROYeToaAzxkU8Y9lXP3kXbMdYiHLl13BgKcE=",
+  "Source": "DevIO.Api",
+  "BasePath": "_content/DevIO.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DevIO.Api\\wwwroot",
+      "Source": "DevIO.Api",
+      "ContentRoot": "C:\\Users\\lucas.andre\\learning\\AspNet\\MinhaApiCore\\src\\DevIO.Api\\wwwroot\\",
+      "BasePath": "_content/DevIO.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

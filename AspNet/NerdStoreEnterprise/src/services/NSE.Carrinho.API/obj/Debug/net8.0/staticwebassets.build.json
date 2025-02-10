@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ci/RfEUrHa/jO2ttDo8+5vhqt8Mtbz7pxSRWWyPHrJU=",
+  "Source": "NSE.Carrinho.API",
+  "BasePath": "_content/NSE.Carrinho.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,26 @@
+﻿@using System.Text.Encodings.Web;
+@inject HtmlEncoder encoder
+@{
+    var inseguro = "<img src='https://t3.ftcdn.net/jpg/05/56/29/10/360_F_556291020_q2ieMiOCKYbtoLITrnt7qcSL1LJYyWrU.jpg' />";
+    var encoded = encoder.Encode(inseguro);
+}
+
+<h1 class="text-md-center">@ViewData["Message"]</h1>
+
+<h3 class="text-md-center">@ViewData["Horario"]</h3>
+
+<br />
+<br />
+@inseguro
+<br />
+<br />
+@Html.Raw(inseguro)
+<br />
+<br />
+@encoded
+<br />
+<br />
+@Html.Raw(encoded)
+<br />
+<br />
+Olá!

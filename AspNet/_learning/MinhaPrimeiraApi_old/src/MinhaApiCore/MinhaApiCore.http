@@ -1,0 +1,6 @@
+@MinhaApiCore_HostAddress = http://localhost:5257
+
+GET {{MinhaApiCore_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

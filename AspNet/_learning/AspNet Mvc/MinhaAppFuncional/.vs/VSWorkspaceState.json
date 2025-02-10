@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\AppMvcFuncional",
+    "\\src\\AppMvcFuncional\\Controllers",
+    "\\src\\AppMvcFuncional\\Views",
+    "\\src\\AppMvcFuncional\\Views\\Shared"
+  ],
+  "SelectedNode": "\\src\\AppMvcFuncional\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+  "PreviewInSolutionExplorer": false
+}

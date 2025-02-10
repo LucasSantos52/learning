@@ -1,0 +1,15 @@
+﻿@* Maneira de se fazer injeção de dependendia em uma view *@
+
+@using AppSemTemplate.Services
+@inject OperacaoService operacao
+
+<div>
+    <p>
+        @Html.Raw(
+                 operacao.Transiet.OperacaoId + "<br/>" +
+                 operacao.Scoped.OperacaoId + "<br/>" +
+                 operacao.Singleton.OperacaoId + "<br/>" +
+                 operacao.SingletonInstance.OperacaoId + "<br/>"
+                 )
+    </p>
+</div>

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>c358618b-2b9f-44ff-93b6-93c68fa4ae27</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Modulos\Produtos\Data\" />
+		<Folder Include="Modulos\Produtos\Models\" />
+		<Folder Include="Modulos\Vendas\Data\" />
+		<Folder Include="Modulos\Vendas\Models\" />
+		<Folder Include="wwwroot\images\" />
+	</ItemGroup>
+
+	<ItemGroup>		
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.8" />		
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
+	</ItemGroup>
+
+</Project>

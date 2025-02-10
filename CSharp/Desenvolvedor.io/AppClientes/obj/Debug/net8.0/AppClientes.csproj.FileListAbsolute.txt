@@ -1,0 +1,15 @@
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\bin\Debug\net8.0\AppClientes.exe
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\bin\Debug\net8.0\AppClientes.deps.json
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\bin\Debug\net8.0\AppClientes.runtimeconfig.json
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\bin\Debug\net8.0\AppClientes.dll
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\bin\Debug\net8.0\AppClientes.pdb
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.AssemblyInfoInputs.cache
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.AssemblyInfo.cs
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.csproj.CoreCompileInputs.cache
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.sourcelink.json
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.dll
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\refint\AppClientes.dll
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.pdb
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\AppClientes.genruntimeconfig.cache
+C:\Users\lucas.andre\learning\CSharp\Desenvolvedor.io\AppClientes\obj\Debug\net8.0\ref\AppClientes.dll

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "bXkNaOJ+GgPrOrYXXwYKW3UShxNTYRx356VXpUh09Dw=",
+  "Source": "NSE.Pagamento.API",
+  "BasePath": "_content/NSE.Pagamento.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
