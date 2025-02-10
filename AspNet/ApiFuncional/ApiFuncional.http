@@ -1,6 +1,0 @@
-@ApiFuncional_HostAddress = http://localhost:5115
-
-GET {{ApiFuncional_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
