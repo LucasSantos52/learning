@@ -13,7 +13,7 @@
     }
   },
   "paths": {
-    "/api/identidade/new-account": {
+    "/api/identity/register": {
       "post": {
         "tags": [
           "Auth"
@@ -44,7 +44,7 @@
         }
       }
     },
-    "/api/identidade/auth": {
+    "/api/identity/login": {
       "post": {
         "tags": [
           "Auth"
@@ -115,7 +115,7 @@
             "minLength": 6,
             "type": "string"
           },
-          "confirmPassword": {
+          "confirmationPassword": {
             "type": "string",
             "nullable": true
           }

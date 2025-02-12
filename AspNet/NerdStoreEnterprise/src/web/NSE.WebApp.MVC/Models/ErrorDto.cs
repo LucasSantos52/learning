@@ -1,6 +1,6 @@
 namespace NSE.WebApp.MVC.Models
 {
-    public class ErrorViewModel
+    public class ErrorDto
     {
         public int ErroCode { get; set; }
         public string Title { get; set; }

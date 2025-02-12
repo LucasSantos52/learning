@@ -11,7 +11,7 @@ using System.Text;
 namespace NSE.Identidade.API.Controllers
 {
     
-    [Route("api/identidade")]
+    [Route("api/identity")]
     public class AuthController : MainController
     {
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -27,7 +27,7 @@ namespace NSE.Identidade.API.Controllers
             _appSettings = appSettings.Value;
         }
 
-        [HttpPost("new-account")]
+        [HttpPost("register")]
         public async Task<ActionResult> Register(RegisterUser registerUser)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
@@ -54,7 +54,7 @@ namespace NSE.Identidade.API.Controllers
             return CustomResponse();
         }
 
-        [HttpPost("auth")]
+        [HttpPost("login")]
         public async Task<ActionResult> Login(LoginUser loginUser)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);

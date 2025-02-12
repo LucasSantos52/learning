@@ -1,45 +1,100 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using NSE.WebApp.MVC.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace NSE.WebApp.MVC.Controllers
 {
-    public class IdentityController: Controller
+    public class IdentityController : MainController
     {
+        private readonly Services.IAuthenticationService _authenticationService;
+
+        public IdentityController(Services.IAuthenticationService authenticationService)
+        {
+            _authenticationService = authenticationService;
+        }
+
         [HttpGet]
-        [Route("new-account")]
+        [Route("register")]
         public IActionResult Register() => View();
 
         [HttpPost]
-        [Route("new-account")]
+        [Route("register")]
         public async Task<IActionResult> Register(UserRegister userRegister)
         {
-            if(!ModelState.IsValid) return View(userRegister);
+            if (!ModelState.IsValid) return View(userRegister);
 
-            if (false) return View(userRegister);
+            var response = await _authenticationService.Register(userRegister);
+
+            if (ResponseHasErrors(response.ResponseResult)) return View(userRegister);
+
+            await MakeLogin(response);
 
             return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]
         [Route("login")]
-        public IActionResult Login() => View();
+        public IActionResult Login(string returnUrl = null)
+        {
+            ViewData["ReturnUrl"] = returnUrl;
+            return View();
+        }
 
         [HttpPost]
         [Route("login")]
-        public async Task<IActionResult> Login(UserLogin userLogin)
+        public async Task<IActionResult> Login(UserLogin userLogin, string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
+
             if (!ModelState.IsValid) return View(userLogin);
 
-            if (false) return View(userLogin);
+            var response = await _authenticationService.Login(userLogin);
 
-            return RedirectToAction("Index", "Home");
+            if (ResponseHasErrors(response.ResponseResult)) return View(userLogin);
+
+            await MakeLogin(response);
+
+            if (string.IsNullOrEmpty(returnUrl)) return RedirectToAction("Index", "Home");
+
+            return LocalRedirect(returnUrl);
         }
 
         [HttpGet]
         [Route("logout")]
         public async Task<IActionResult> Logout()
         {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
+        }
+
+        private async Task MakeLogin(UsuarioRespostaLogin resposta)
+        {
+            var token = GetFormatedToken(resposta.AccessToken);
+
+            var claims = new List<Claim>();
+            claims.Add(new Claim("JWT", resposta.AccessToken));
+            claims.AddRange(token.Claims);
+
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+            var authProperties = new AuthenticationProperties
+            {
+                ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(60),
+                IsPersistent = true,
+            };
+
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+        }
+
+        private static JwtSecurityToken GetFormatedToken(string jwtToken)
+        {
+            return new JwtSecurityTokenHandler().ReadToken(jwtToken) as JwtSecurityToken;
         }
     }
 }

@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\NerdStoreEnterprise\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2B9CA3E7-5CAC-4E49-AF67-AD63C9D63A2B}|src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj|c:\\users\\lucas.andre\\learning\\aspnet\\nerdstoreenterprise\\src\\web\\nse.webapp.mvc\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B9CA3E7-5CAC-4E49-AF67-AD63C9D63A2B}|src\\web\\NSE.WebApp.MVC\\NSE.WebApp.MVC.csproj|solutionrelative:src\\web\\nse.webapp.mvc\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,28 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 209,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\lucas.andre\\learning\\AspNet\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "src\\web\\NSE.WebApp.MVC\\Services\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\lucas.andre\\learning\\AspNet\\NerdStoreEnterprise\\src\\web\\NSE.WebApp.MVC\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "src\\web\\NSE.WebApp.MVC\\Services\\AuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T17:12:16.739Z",
-              "EditorCaption": ""
             }
           ]
         }

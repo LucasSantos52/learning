@@ -23,7 +23,7 @@ namespace NSE.Identidade.API.Controllers
                     new Dictionary<string, string[]> // dictionary é como os objetos js, chave: valor, então chave= string: valor= string[]
             {
                 // todos os erros serão passados em coleção dentro de um objeto chamado mensagens
-                {"Message", Errors.ToArray() },
+                {"Messages", Errors.ToArray() },
             }));
         }
 

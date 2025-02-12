@@ -13,7 +13,7 @@ namespace NSE.Identidade.API.Models
         public string Password { get; set; }
 
         [Compare("Password", ErrorMessage = "As senhas não conferem")]
-        public string ConfirmPassword { get; set; }
+        public string ConfirmationPassword { get; set; }
     }
 
     public class LoginUser
