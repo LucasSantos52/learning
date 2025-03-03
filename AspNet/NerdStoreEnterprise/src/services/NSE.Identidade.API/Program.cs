@@ -1,9 +1,9 @@
 using NSE.Identidade.API.Configuration;
-using NSE.Identidade.API.configuration;
+using NSE.WebApi.Core.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddApiConfiguration(builder.Configuration, builder.Environment);
-builder.Services.AddIdentityconfiguration(builder.Configuration);
+builder.Services.AddApiConfiguration(builder.Configuration,builder.Environment);
+builder.Services.AddJwtConfiguration(builder.Configuration);
 builder.Services.AddSwaggerConfiguration();
 
 var app = builder.Build();

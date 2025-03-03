@@ -222,3 +222,5 @@ C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\services\NSE.Identi
 C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\net9.0\NSE.Identidade.API.pdb
 C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\net9.0\NSE.Identidade.API.genruntimeconfig.cache
 C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\net9.0\ref\NSE.Identidade.API.dll
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\services\NSE.Identidade.API\bin\Debug\net9.0\NSE.WebApi.Core.dll
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\services\NSE.Identidade.API\bin\Debug\net9.0\NSE.WebApi.Core.pdb

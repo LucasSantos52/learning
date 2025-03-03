@@ -1,0 +1,13 @@
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\bin\Debug\net9.0\NSE.WebApi.Core.deps.json
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\bin\Debug\net9.0\NSE.WebApi.Core.dll
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\bin\Debug\net9.0\NSE.WebApi.Core.pdb
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.csproj.AssemblyReference.cache
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.AssemblyInfoInputs.cache
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.AssemblyInfo.cs
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.csproj.CoreCompileInputs.cache
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.sourcelink.json
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.dll
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\refint\NSE.WebApi.Core.dll
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\NSE.WebApi.Core.pdb
+C:\Users\lucas.andre\learning\AspNet\NerdStoreEnterprise\src\building blocks\NSE.WebApi.Core\obj\Debug\net9.0\ref\NSE.WebApi.Core.dll

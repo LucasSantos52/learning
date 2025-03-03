@@ -1,4 +1,7 @@
-﻿using NSE.Identidade.API.configuration;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using NSE.Identidade.API.Data;
+using NSE.WebApi.Core.Identity;
 
 namespace NSE.Identidade.API.Configuration
 {
@@ -17,6 +20,17 @@ namespace NSE.Identidade.API.Configuration
                 configuration.AddUserSecrets<Program>();
             }
 
+            IConfiguration config = configuration.Build();
+
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
+
+            services.AddDefaultIdentity<IdentityUser>()
+                .AddRoles<IdentityRole>()
+                //.AddErrorDescriber<IdentityMensagensPortugues>() // adiciona a tradução feita em extensions/identityMensagensPortugues
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
             services.AddControllers();
 
             return services;
@@ -28,7 +42,7 @@ namespace NSE.Identidade.API.Configuration
 
             app.UseRouting();
 
-            app.UseIdentityconfiguration(); // precisa estar nesse lugar
+            app.UseJwtConfiguration();
 
             app.UseEndpoints(endpoints =>
             {

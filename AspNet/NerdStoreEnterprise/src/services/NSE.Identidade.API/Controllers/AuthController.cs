@@ -2,15 +2,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using NSE.Identidade.API.Extensions;
 using NSE.Identidade.API.Models;
+using NSE.WebApi.Core.Identity;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
 namespace NSE.Identidade.API.Controllers
 {
-    
+
     [Route("api/identity")]
     public class AuthController : MainController
     {

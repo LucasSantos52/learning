@@ -60,7 +60,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.1": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
@@ -1809,6 +1809,19 @@
             "rid": "win"
           }
         }
+      },
+      "NSE.WebApi.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.2"
+        },
+        "compile": {
+          "bin/placeholder/NSE.WebApi.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NSE.WebApi.Core.dll": {}
+        }
       }
     }
   },
@@ -1869,10 +1882,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.1": {
-      "sha512": "R/ZG9llsAOn/E8WOtg+PyLCB599lxzaIGy/NbwV1xG+smkyBF4w5/AJXNDq6tVw7/qbqvd+4xLAdWQiiVj1DXw==",
+    "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.2": {
+      "sha512": "p3WhJqzvf6uuQiYpxARdC4Yr+UquZzzk7ZGun4MSufx3Mi9kmfjlU0e2MiBRHYWQdfx2HjU0ifaHJecJ7lXqug==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/9.0.1",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/9.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1881,7 +1894,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
         "lib/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
-        "microsoft.aspnetcore.authentication.jwtbearer.9.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.9.0.2.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
@@ -5347,11 +5360,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "NSE.WebApi.Core/1.0.0": {
+      "type": "project",
+      "path": "../../building blocks/NSE.WebApi.Core/NSE.WebApi.Core.csproj",
+      "msbuildProject": "../../building blocks/NSE.WebApi.Core/NSE.WebApi.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.1",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameWorkCore >= 9.0.0",
       "Microsoft.AspNetCore.Identity.UI >= 9.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
@@ -5359,6 +5377,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.0",
+      "NSE.WebApi.Core >= 1.0.0",
       "Swashbuckle.AspNetCore >= 7.2.0"
     ]
   },
@@ -5393,7 +5412,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lucas.andre\\learning\\AspNet\\NerdStoreEnterprise\\src\\building blocks\\NSE.WebApi.Core\\NSE.WebApi.Core.csproj": {
+              "projectPath": "C:\\Users\\lucas.andre\\learning\\AspNet\\NerdStoreEnterprise\\src\\building blocks\\NSE.WebApi.Core\\NSE.WebApi.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5414,7 +5437,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-            "version": "[9.0.1, )"
+            "version": "[9.0.2, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameWorkCore": {
             "target": "Package",
