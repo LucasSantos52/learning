@@ -1,0 +1,20 @@
+@if(visible()) {
+<form [formGroup]="form" (ngSubmit)="onAddTask()">
+    <input
+        formControlName="title"
+        type="text"
+        placeholder="Title"
+    />
+    <input
+        formControlName="summary"
+        type="text"
+        placeholder="Summary"
+    />
+    <input
+        formControlName="dueDate"
+        type="text"
+        placeholder="Due Date"
+    />
+    <button type="submit">Add Task</button>
+</form>
+}

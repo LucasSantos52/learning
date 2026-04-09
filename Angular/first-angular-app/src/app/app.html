@@ -1,0 +1,21 @@
+<app-header />
+
+<main>
+    <ul id="users">
+        @for(user of users; track user.id) {
+        <li>
+            <app-user
+                [user]="user"
+                [selected]="user.id === selectedUser?.id"
+                (selectUser)="onSelectUser(user)"
+            />
+        </li>
+        }
+    </ul>
+
+    @if(selectedUser) {
+    <app-task-area [user]="selectedUser"></app-task-area>
+    } @else {
+        <p>Select a user</p>
+    }
+</main>
